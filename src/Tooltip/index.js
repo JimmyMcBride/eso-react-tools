@@ -1,11 +1,16 @@
 import React from "react";
 import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
 import axios from "axios";
+import "sriracha-ui/css/main.css";
 import "./styles.css";
 
 const EsoSet = ({ name, children }) => {
-  const { data: set } = axios.get(`https://eso-sets.herokuapp.com/set/${name}`);
-  console.log(set);
+  const [set, setSet] = React.useState(null);
+  React.useEffect(() => {
+    axios
+      .get(`https://eso-sets.herokuapp.com/set/${name}`)
+      .then((res) => setSet(res.data));
+  }, [name]);
   return (
     <Tooltip>
       {children}
