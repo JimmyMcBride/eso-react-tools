@@ -9,7 +9,7 @@ const EsoSet = ({ name, children }) => {
   return (
     <Tooltip>
       {children}
-      <div className="div">
+      <div className="tooltip">
         <Card
           key={set?.id}
           w="96%"
