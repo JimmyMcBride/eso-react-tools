@@ -11,7 +11,7 @@ const EsoSet = ({ name, children }) => {
       {children}
       <div className="div">
         <Card
-          key={set.id}
+          key={set?.id}
           w="96%"
           maxW="35rem"
           invert
@@ -20,15 +20,15 @@ const EsoSet = ({ name, children }) => {
           p="0.4rem 2rem"
         >
           <Text bold lf color={theme.colors.amber5}>
-            {set.name}
+            {set?.name}
           </Text>
           <Box stretch h="0.1rem" bg={theme.colors.amber1} />
           <Text>
             <strong>Type:</strong>{" "}
-            <span style={{ color: theme.colors.brown2 }}>{set.type}</span>
+            <span style={{ color: theme.colors.brown2 }}>{set?.type}</span>
           </Text>
           <Box stretch h="0.1rem" bg={theme.colors.amber1} />
-          <Text dangerouslySetInnerHTML={{ __html: set.bonuses }} />
+          <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} />
         </Card>
       </div>
     </Tooltip>
