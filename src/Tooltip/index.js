@@ -32,7 +32,7 @@ const EsoSetItem = ({ name }) => {
         color={theme.colors.blue5}
         hvrColor={theme.colors.blue8}
       >
-        {/* {name} */}Text
+        {name}
       </Text>
       <div className="tooltip">Tooltip</div>
     </Tooltip>
