@@ -1,9 +1,9 @@
 import React from "react";
 import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
-// import { Tooltip, Text, theme } from "sriracha-ui";
 import Error from "./Error";
 import Loading from "./Loading";
 import axios from "axios";
+import styled from "styled-components";
 // import "sriracha-ui/css/main.css";
 // import "./styles.css";
 
@@ -19,7 +19,7 @@ const EsoSetItem = ({ name, ...rest }) => {
   }, [name]);
 
   return (
-    <Tooltip {...rest}>
+    <EsoTooltip {...rest}>
       <Text
         stretch
         taCenter
@@ -42,7 +42,6 @@ const EsoSetItem = ({ name, ...rest }) => {
             radius="0.5rem"
             p="0.4rem 2rem"
           >
-            Text
             <Text bold color={theme.colors.amber5}>
               {set?.name}
             </Text>
@@ -55,8 +54,55 @@ const EsoSetItem = ({ name, ...rest }) => {
           </Card>
         )}
       </div>
-    </Tooltip>
+    </EsoTooltip>
   );
 };
+
+const EsoTooltip = styled(Tooltip)`
+  @import "sriracha-ui/css/main.css";
+  .health {
+    color: crimson;
+  }
+
+  .stamina {
+    color: green;
+  }
+
+  .magicka {
+    color: dodgerblue;
+  }
+
+  .armor {
+    color: rgb(185, 198, 207);
+  }
+
+  .weapon {
+    color: rgb(81, 129, 81);
+  }
+
+  .spell {
+    color: rgb(147, 197, 248);
+  }
+
+  .s-pen {
+    color: rgb(190, 171, 171);
+  }
+
+  .p-pen {
+    color: rgb(158, 171, 184);
+  }
+
+  .debuff {
+    color: rgb(209, 116, 116);
+  }
+
+  .buff {
+    color: rgb(185, 164, 94);
+  }
+
+  .type {
+    color: #d7ccc8;
+  }
+`;
 
 export default EsoSetItem;
