@@ -47,8 +47,7 @@ const EsoSetItem = ({ name, ...rest }) => {
             </Text>
             <Box stretch h="0.1rem" bg={theme.colors.amber1} />
             <Text>
-              <strong>Type:</strong>{" "}
-              <span style={{ color: theme.colors.brown2 }}>{set?.type}</span>
+              <strong>Type:</strong> <span className="type">{set?.type}</span>
             </Text>
             <Box stretch h="0.1rem" bg={theme.colors.amber1} />
             <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} />
