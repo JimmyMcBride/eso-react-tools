@@ -5,3 +5,18 @@
 td {
   padding: 0.5rem;
 }
+
+.head-row {
+  width: 100%;
+  background: #ff8f00;
+}
+
+.data-row {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+}
+
+.gear-table {
+  width: 55rem;
+}
