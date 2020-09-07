@@ -7,7 +7,7 @@ import { Tooltip, Text, theme } from "sriracha-ui";
 // import "sriracha-ui/css/main.css";
 // import "./styles.css";
 
-const EsoSetItem = ({ name }) => {
+const EsoSetItem = ({ name, ...rest }) => {
   // const [set, setSet] = React.useState({
   //   id: 515,
   //   name: "Zaan",
@@ -25,7 +25,7 @@ const EsoSetItem = ({ name }) => {
   // }, [name]);
 
   return (
-    <Tooltip>
+    <Tooltip {...rest}>
       <Text
         stretch
         taCenter
