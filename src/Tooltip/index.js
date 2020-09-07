@@ -1,11 +1,11 @@
 import React from "react";
-// import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
-import { Tooltip, Text, theme } from "sriracha-ui";
-// import Error from "./Error";
-// import Loading from "./Loading";
+import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
+// import { Tooltip, Text, theme } from "sriracha-ui";
+import Error from "./Error";
+import Loading from "./Loading";
 import axios from "axios";
 // import "sriracha-ui/css/main.css";
-// import "./styles.css";
+import "./styles.css";
 
 const EsoSetItem = ({ name, ...rest }) => {
   const [set, setSet] = React.useState(null);
@@ -28,37 +28,35 @@ const EsoSetItem = ({ name, ...rest }) => {
       >
         {name}
       </Text>
-      <div className="tooltip">Tooltip</div>
+      <div className="tooltip">
+        {error ? (
+          <Error message={error} />
+        ) : !set && !error ? (
+          <Loading />
+        ) : (
+          <Card
+            key={set?.id}
+            w="96%"
+            maxW="35rem"
+            invert
+            shade
+            radius="0.5rem"
+            p="0.4rem 2rem"
+          >
+            <Text bold color={theme.colors.amber5}>
+              {set?.name}
+            </Text>
+            <Box stretch h="0.1rem" bg={theme.colors.amber1} />
+            <Text>
+              <strong>Type:</strong> <span className="type">{set?.type}</span>
+            </Text>
+            <Box stretch h="0.1rem" bg={theme.colors.amber1} />
+            {/* <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} /> */}
+          </Card>
+        )}
+      </div>
     </Tooltip>
   );
 };
-
-// {
-//   error ? (
-//     <Error message={error} />
-//   ) : !set && !error ? (
-//     <Loading />
-//   ) : (
-//     <Card
-//       key={set?.id}
-//       w="96%"
-//       maxW="35rem"
-//       invert
-//       shade
-//       radius="0.5rem"
-//       p="0.4rem 2rem"
-//     >
-//       <Text bold color={theme.colors.amber5}>
-//         {set?.name}
-//       </Text>
-//       <Box stretch h="0.1rem" bg={theme.colors.amber1} />
-//       <Text>
-//         <strong>Type:</strong> <span className="type">{set?.type}</span>
-//       </Text>
-//       <Box stretch h="0.1rem" bg={theme.colors.amber1} />
-//       {/* <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} /> */}
-//     </Card>
-//   );
-// }
 
 export default EsoSetItem;
