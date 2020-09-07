@@ -28,35 +28,30 @@ const EsoSetItem = ({ name, ...rest }) => {
       >
         {name}
       </Text>
-      <div className="tooltip">
-        {error ? (
-          <Error message={error} />
-        ) : !set && !error ? (
-          <Loading />
-        ) : (
-          <Card
-            w="96%"
-            maxW="35rem"
-            invert
-            shade
-            radius="0.5rem"
-            p="0.4rem 2rem"
-          >
-            Text
-            {/* <Text bold color={theme.colors.amber5}>
-              {set?.name}
-            </Text>
-            <Box stretch h="0.1rem" bg={theme.colors.amber1} />
-            <Text>
-              <strong>Type:</strong> <span className="type">{set?.type}</span>
-            </Text>
-            <Box stretch h="0.1rem" bg={theme.colors.amber1} /> */}
-            {/* <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} /> */}
-          </Card>
-        )}
-      </div>
+      <div className="tooltip">Text goes here</div>
     </Tooltip>
   );
 };
+
+// {
+//   error ? (
+//     <Error message={error} />
+//   ) : !set && !error ? (
+//     <Loading />
+//   ) : (
+//     <Card w="96%" maxW="35rem" invert shade radius="0.5rem" p="0.4rem 2rem">
+//       Text
+//       {/* <Text bold color={theme.colors.amber5}>
+//               {set?.name}
+//             </Text>
+//             <Box stretch h="0.1rem" bg={theme.colors.amber1} />
+//             <Text>
+//               <strong>Type:</strong> <span className="type">{set?.type}</span>
+//             </Text>
+//             <Box stretch h="0.1rem" bg={theme.colors.amber1} /> */}
+//       {/* <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} /> */}
+//     </Card>
+//   )
+// }
 
 export default EsoSetItem;
