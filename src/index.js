@@ -2,3 +2,5 @@
 // export { default as EsoGearTable } from "./Table";
 import EsoSetItem from "./Tooltip";
 import EsoGearTable from "./Table";
+
+export { EsoSetItem, EsoGearTable };
