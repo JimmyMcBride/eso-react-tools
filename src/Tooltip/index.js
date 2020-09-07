@@ -7,7 +7,7 @@ import { Tooltip, Text, theme } from "sriracha-ui";
 import "sriracha-ui/css/main.css";
 import "./styles.css";
 
-const EsoSetItem = ({ name }) => {
+const EsoSetItem = () => {
   // const [set, setSet] = React.useState({
   //   id: 515,
   //   name: "Zaan",
@@ -32,7 +32,7 @@ const EsoSetItem = ({ name }) => {
         color={theme.colors.blue5}
         hvrColor={theme.colors.blue8}
       >
-        {name}
+        {/* {name} */}Text
       </Text>
       <div className="tooltip">Tooltip</div>
     </Tooltip>
