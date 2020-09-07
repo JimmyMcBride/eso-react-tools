@@ -2,7 +2,6 @@ import { css } from "styled-components";
 
 export const baseStyles = css`
   @import url("https://fonts.googleapis.com/css?family=Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap");
-  @import "markdown.css";
 
   /* Variables */
   :root {
