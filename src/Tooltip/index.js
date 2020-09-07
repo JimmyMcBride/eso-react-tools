@@ -7,7 +7,7 @@ import { Tooltip, Text, theme } from "sriracha-ui";
 // import "sriracha-ui/css/main.css";
 // import "./styles.css";
 
-const EsoSetItem = () => {
+const EsoSetItem = ({ name }) => {
   // const [set, setSet] = React.useState({
   //   id: 515,
   //   name: "Zaan",
