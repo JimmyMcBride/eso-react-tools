@@ -1,6 +1,6 @@
 import React from "react";
 // import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
-import { Tooltip } from "sriracha-ui";
+import { Tooltip, Text, theme } from "sriracha-ui";
 // import Error from "./Error";
 // import Loading from "./Loading";
 // import axios from "axios";
