@@ -5,7 +5,7 @@ import { Tooltip, Text, theme } from "sriracha-ui";
 // import Loading from "./Loading";
 // import axios from "axios";
 // import "sriracha-ui/css/main.css";
-import "./styles.css";
+// import "./styles.css";
 
 const EsoSetItem = ({ name }) => {
   // const [set, setSet] = React.useState(null);
