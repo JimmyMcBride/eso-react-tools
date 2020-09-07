@@ -1,17 +1,12 @@
 import React from "react";
 import { Card, theme } from "sriracha-ui";
-import { EsoSet } from "../Tooltip";
+import { EsoSetItem } from "../Tooltip";
 import "./styles.css";
 
 export default function EsoGearTable({ data }) {
-  React.useEffect(() => {
-    document.querySelectorAll(".blah").forEach((item) => {
-      console.log(item.clientWidth);
-    });
-  }, []);
   return (
     <Card invert bg={theme.colors.gray9} p="1rem" radius="0.3rem">
-      <table style={{ width: "550px" }} className="blah">
+      <table style={{ width: "550px" }}>
         <thead>
           <tr style={{ width: "100%", background: theme.colors.amber8 }}>
             <th>Gear</th>
@@ -32,7 +27,7 @@ export default function EsoGearTable({ data }) {
               >
                 <td>{item.gear}</td>
                 <td>
-                  <EsoSet name={item.set} ttM="-2rem 0 0 14.5rem" />
+                  <EsoSetItem name={item.set} ttM="-2rem 0 0 14.5rem" />
                 </td>
                 <td>{item.weight}</td>
                 <td>{item.trait}</td>
