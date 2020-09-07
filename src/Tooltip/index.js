@@ -1,13 +1,13 @@
 import React from "react";
-import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
-// import { Tooltip, Text, theme } from "sriracha-ui";
+// import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
+import { Tooltip, Text, theme } from "sriracha-ui";
 // import Error from "./Error";
 // import Loading from "./Loading";
 // import axios from "axios";
 // import "sriracha-ui/css/main.css";
 import "./styles.css";
 
-const EsoSetItem = ({ name, ...rest }) => {
+const EsoSetItem = ({ name }) => {
   // const [set, setSet] = React.useState(null);
   // const [error, setError] = React.useState(null);
 
@@ -19,17 +19,18 @@ const EsoSetItem = ({ name, ...rest }) => {
   // }, [name]);
 
   return (
-    <Tooltip {...rest}>
-      <Text
-        stretch
-        taCenter
-        color={theme.colors.blue5}
-        hvrColor={theme.colors.blue8}
-      >
-        {name}
-      </Text>
-      <div className="tooltip">Text goes here</div>
-    </Tooltip>
+    // <Tooltip {...rest}>
+    //   <Text
+    //     stretch
+    //     taCenter
+    //     color={theme.colors.blue5}
+    //     hvrColor={theme.colors.blue8}
+    //   >
+    //     {name}
+    //   </Text>
+    //   <div className="tooltip">Text goes here</div>
+    // </Tooltip>
+    <div>{name}</div>
   );
 };
 
