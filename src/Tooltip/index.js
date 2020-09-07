@@ -17,8 +17,6 @@ const EsoSet = ({ name, ...rest }) => {
       .catch((err) => setError(err.message));
   }, [name]);
 
-  if (!set && !error) return <Loading />;
-
   return (
     <Tooltip {...rest}>
       <Text
@@ -32,6 +30,8 @@ const EsoSet = ({ name, ...rest }) => {
       <div className="tooltip">
         {error ? (
           <Error message={error} />
+        ) : !set && !error ? (
+          <Loading />
         ) : (
           <Card
             key={set?.id}
