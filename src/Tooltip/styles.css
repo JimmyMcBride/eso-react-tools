@@ -11,7 +11,7 @@
 }
 
 .armor {
-  color: silver;
+  color: rgb(185, 198, 207);
 }
 
 .weapon {
@@ -28,4 +28,12 @@
 
 .p-pen {
   color: rgb(158, 171, 184);
+}
+
+.debuff {
+  color: rgb(209, 116, 116);
+}
+
+.buff {
+  color: rgb(185, 164, 94);
 }
