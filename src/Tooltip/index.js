@@ -35,7 +35,6 @@ const EsoSetItem = ({ name, ...rest }) => {
           <Loading />
         ) : (
           <Card
-            key={set?.id}
             w="96%"
             maxW="35rem"
             invert
