@@ -50,7 +50,7 @@ const EsoSetItem = ({ name, ...rest }) => {
               <strong>Type:</strong> <span className="type">{set?.type}</span>
             </Text>
             <Box stretch h="0.1rem" bg={theme.colors.amber1} />
-            <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} />
+            {/* <Text dangerouslySetInnerHTML={{ __html: set?.bonuses }} /> */}
           </Card>
         )}
       </div>
