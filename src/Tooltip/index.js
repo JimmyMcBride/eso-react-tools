@@ -1,11 +1,11 @@
 import React from "react";
 // import { Tooltip, Card, Text, Box, theme } from "sriracha-ui";
-import { Tooltip, Text, theme } from "sriracha-ui";
+import { Tooltip } from "sriracha-ui";
 // import Error from "./Error";
 // import Loading from "./Loading";
 // import axios from "axios";
-import "sriracha-ui/css/main.css";
-import "./styles.css";
+// import "sriracha-ui/css/main.css";
+// import "./styles.css";
 
 const EsoSetItem = () => {
   // const [set, setSet] = React.useState({
@@ -26,14 +26,14 @@ const EsoSetItem = () => {
 
   return (
     <Tooltip>
-      <Text
+      {/* <Text
         stretch
         taCenter
         color={theme.colors.blue5}
         hvrColor={theme.colors.blue8}
-      >
-        {/* {name} */}Text
-      </Text>
+      > */}
+      {/* {name} */}Text
+      {/* </Text> */}
       <div className="tooltip">Tooltip</div>
     </Tooltip>
   );
