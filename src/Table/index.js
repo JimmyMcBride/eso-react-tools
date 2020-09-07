@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, theme } from "sriracha-ui";
-import { EsoSetItem } from "../Tooltip";
+import EsoSetItem from "../Tooltip";
 import "./styles.css";
 
 export default function EsoGearTable({ data }) {
