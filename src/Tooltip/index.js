@@ -6,7 +6,7 @@ import axios from "axios";
 import "sriracha-ui/css/main.css";
 import "./styles.css";
 
-const EsoSet = ({ name, ...rest }) => {
+const EsoSetItem = ({ name, ...rest }) => {
   const [set, setSet] = React.useState(null);
   const [error, setError] = React.useState(null);
 
@@ -59,4 +59,4 @@ const EsoSet = ({ name, ...rest }) => {
   );
 };
 
-export default EsoSet;
+export default EsoSetItem;

@@ -1,10 +1,9 @@
 import React from "react";
 import { Card, theme } from "sriracha-ui";
-// import { EsoSet } from "eso-react-tools";
 import { EsoSet } from "../Tooltip";
 import "./styles.css";
 
-export default function Table({ data }) {
+export default function EsoGearTable({ data }) {
   React.useEffect(() => {
     document.querySelectorAll(".blah").forEach((item) => {
       console.log(item.clientWidth);
