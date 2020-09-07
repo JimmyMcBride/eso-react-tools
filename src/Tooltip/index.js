@@ -26,14 +26,14 @@ const EsoSetItem = () => {
 
   return (
     <Tooltip>
-      {/* <Text
+      <Text
         stretch
         taCenter
         color={theme.colors.blue5}
         hvrColor={theme.colors.blue8}
-      > */}
-      {/* {name} */}Text
-      {/* </Text> */}
+      >
+        {/* {name} */}Text
+      </Text>
       <div className="tooltip">Tooltip</div>
     </Tooltip>
   );
