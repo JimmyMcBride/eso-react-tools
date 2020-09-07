@@ -3,7 +3,7 @@ import React from "react";
 import { Tooltip, Text, theme } from "sriracha-ui";
 // import Error from "./Error";
 // import Loading from "./Loading";
-// import axios from "axios";
+import axios from "axios";
 // import "sriracha-ui/css/main.css";
 // import "./styles.css";
 
