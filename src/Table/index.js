@@ -32,7 +32,7 @@ export default function EsoGearTable({ data }) {
               >
                 <td>{item.gear}</td>
                 <td>
-                  <EsoSet name={item.set} />
+                  <EsoSet name={item.set} ttM="-2rem 0 0 14.5rem" />
                 </td>
                 <td>{item.weight}</td>
                 <td>{item.trait}</td>
