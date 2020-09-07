@@ -1,6 +1,6 @@
 {
   "name": "eso-react-tools",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A set a of React components to intergrate my ESO Sets API into your app with ease.",
   "main": "dist/index.js",
   "repository": "git@github.com:JimmyMcBride/eso-react-tools.git",
