@@ -4,6 +4,7 @@ import Error from "./Error";
 import Loading from "./Loading";
 import axios from "axios";
 import styled from "styled-components";
+import { baseStyles } from "../baseStyles";
 // import "sriracha-ui/css/main.css";
 // import "./styles.css";
 
@@ -59,7 +60,7 @@ const EsoSetItem = ({ name, ...rest }) => {
 };
 
 const EsoTooltip = styled(Tooltip)`
-  @import "sriracha-ui/css/main.css";
+  ${baseStyles}
   .health {
     color: crimson;
   }

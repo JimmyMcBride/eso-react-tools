@@ -1,11 +1,12 @@
 import React from "react";
 import { Card, theme } from "sriracha-ui";
 import EsoSetItem from "../Tooltip";
-import "./styles.css";
+import styled from "styled-components";
+import { baseStyles } from "../baseStyles";
 
 export default function EsoGearTable({ data }) {
   return (
-    <Card invert bg={theme.colors.gray9} p="1rem" radius="0.3rem">
+    <EsoGearWrapper invert bg={theme.colors.gray9} p="1rem" radius="0.3rem">
       <table className="gear-table">
         <thead>
           <tr className="head-row">
@@ -30,6 +31,32 @@ export default function EsoGearTable({ data }) {
           })}
         </thead>
       </table>
-    </Card>
+    </EsoGearWrapper>
   );
 }
+
+const EsoGearWrapper = styled(Card)`
+  ${baseStyles}
+  * {
+    border-radius: 0.2rem;
+  }
+
+  td {
+    padding: 0.5rem;
+  }
+
+  .head-row {
+    width: 100%;
+    background: #ff8f00;
+  }
+
+  .data-row {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0.5rem;
+  }
+
+  .gear-table {
+    width: 55rem;
+  }
+`;
