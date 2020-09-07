@@ -8,21 +8,15 @@ import { Tooltip, Text, theme } from "sriracha-ui";
 // import "./styles.css";
 
 const EsoSetItem = ({ name, ...rest }) => {
-  // const [set, setSet] = React.useState({
-  //   id: 515,
-  //   name: "Zaan",
-  //   type: "Monster Helm Set",
-  //   bonuses:
-  //     "<strong>(1 piece)</strong> <span>Adds 833 <span class='spell'>Spell Critical</span></span><br> <strong>(2 piece)</strong> <span>When you damage a nearby enemy with a Light or Heavy Attack, you have a 33% chance to create a beam of fire that will connect you to your enemy. The beam deals 2010 Flame damage every 1 second to your enemy for 6 seconds. Every second, this damage increases by 100%. The beam is broken if the enemy moves 8 meters away from you. This effect can occur every 18 seconds.</span><br>",
-  // });
-  // const [error, setError] = React.useState(null);
+  const [set, setSet] = React.useState(null);
+  const [error, setError] = React.useState(null);
 
-  // React.useEffect(() => {
-  //   axios
-  //     .get(`https://eso-sets.herokuapp.com/set/${name}`)
-  //     .then((res) => setSet(res.data))
-  //     .catch((err) => setError(err.message));
-  // }, [name]);
+  React.useEffect(() => {
+    axios
+      .get(`https://eso-sets.herokuapp.com/set/${name}`)
+      .then((res) => setSet(res.data))
+      .catch((err) => setError(err.message));
+  }, [name]);
 
   return (
     <Tooltip {...rest}>
